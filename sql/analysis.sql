@@ -18,20 +18,17 @@ GROUP BY
 
 /* Query 2
 Environmental Quality in Areas of Red Zones (holc_pred) and Concentrated Poverty (concpov) in Minneapolis and St. Paul */
-CREATE TABLE environmental_quality AS
+CREATE TABLE tcma_environmental_quality AS
 WITH scores AS (
     SELECT
-        ctu_prmry,
+		ctu_prmry,
         tr10,
         tr_ej,
         holc_pred,
-        AVG(ghg_com_pe) * 0.3
-        + AVG(avg_temp) * 0.2
-        + AVG(env_pm25) * 0.4
-        + AVG(env_dslpm) * 0.4 AS environmental_quality_score
+		ROUND(((0.25 * (100 - avg_temp)) + (0.25 * (100 - env_cancer)) + (0.25 * (100 - (ghg_com_pe/10))) + (0.25 * (env_pm25/12)) + (0.25 * (100 - (env_dslpm/40))))) AS env_qs
     FROM equity_considerations
     WHERE tr10 IS NOT NULL
-    GROUP BY ctu_prmry, concpov, tr10, tr_ej, holc_pred
+    GROUP BY ctu_prmry, avg_temp, ghg_com_pe, env_cancer, env_pm25, concpov, tr10, env_dslpm, tr_ej, holc_pred, env_qs
 )
 
 SELECT *
