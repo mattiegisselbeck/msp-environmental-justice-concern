@@ -1,5 +1,7 @@
 # `msp-environmental-justice-concern`: Analyzing Environmental Justice Concerns in Minneapolis-St.Paul
 
+This project was completed as a requirement for GIS 5577: Spatial Database Design & Administration.
+
 ## About
 Historically redlined neighborhoods were and are areas of concentrated poverty. Low-income neighborhoods and Black, Indigenous, and People of Color (BIPOC) communities in the TCMA are heavily urbanized, have a higher potential exposure to pollutants, and are more vulnerable to environmental factors. To combat this inequality, environmental justice seeks to address the inequity of environmental protection in their communities, and attempts to restore this disparity. This project analyzes census tracts in the Twin Cities Metro Area (TCMA) that fall within areas of environmental justice concern, considering various equity considerations.
 
