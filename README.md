@@ -13,7 +13,7 @@ Historically redlined neighborhoods were and are areas of concentrated poverty. 
 | Average Total Population | 3,896 | 4,662  | 766 |
 | Average BIPOC Population | 0.19 |  0.58 | 0.39 |
 | Average Hispanic Population | 0.05 |  0.13 |  0.08 |
-| Average Concentrated Poverty | 0 |  0.53 | <code style="color : red">0.53</code> |
+| Average Concentrated Poverty | 0 |  0.53 | $${\color{red}0.53}$$ |
 | HOLC  Yellow “Definitely Declining” Zone - MSP | 0.11 |  0.36 |  0.25 |
 | HOLC Red “Hazardous” Zone - MSP | 0.07 |  0.21 |  0.14 |
 | Average Land Surface Temperature | 90°F |  95°F | 5°F |
